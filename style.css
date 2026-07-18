@@ -1,1 +1,246 @@
-</> CSS
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f8fbff;
+color:#222;
+line-height:1.7;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+background:#ffffff;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:60px;
+height:60px;
+object-fit:contain;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+font-weight:600;
+color:#0b5cab;
+}
+
+.hero{
+padding:60px 40px;
+background:linear-gradient(135deg,#eaf4ff,#ffffff);
+}
+
+.hero-content{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.hero-text{
+flex:1;
+min-width:300px;
+}
+
+.hero-text h1{
+font-size:42px;
+color:#0b5cab;
+margin-bottom:15px;
+}
+
+.hero-text h2{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.hero-text p{
+margin:15px 0;
+}
+
+.hero-image{
+flex:1;
+text-align:center;
+}
+
+.hero-image img{
+width:350px;
+max-width:100%;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}v.btn,
+.call-btn,
+.whatsapp-btn{
+display:inline-block;
+padding:14px 28px;
+margin:10px 10px 0 0;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+color:#fff;
+background:#0b5cab;
+transition:.3s;
+}
+
+.whatsapp-btn{
+background:#25D366;
+}
+
+.btn:hover,
+.call-btn:hover,
+.whatsapp-btn:hover{
+transform:translateY(-2px);
+opacity:.9;
+}
+
+.about,
+.treatments,
+.why-us,
+.contact{
+padding:70px 20px;
+}
+
+.about h2,
+.treatments h2,
+.why-us h2,
+.contact h2{
+text-align:center;
+font-size:34px;
+color:#0b5cab;
+margin-bottom:30px;
+}
+
+.experience,
+.treatment-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:35px;
+}
+
+.card{
+background:#fff;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 6px 18px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:#0b5cab;
+margin-bottom:10px;
+}.benefits{
+list-style:none;
+max-width:700px;
+margin:0 auto;
+padding:0;
+}
+
+.benefits li{
+background:#ffffff;
+margin:12px 0;
+padding:15px 20px;
+border-left:5px solid #0b5cab;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.contact-box{
+background:#ffffff;
+padding:35px;
+border-radius:15px;
+box-shadow:0 6px 20px rgba(0,0,0,.08);
+max-width:700px;
+margin:0 auto;
+}
+
+.contact-box h3{
+color:#0b5cab;
+margin-top:20px;
+margin-bottom:10px;
+}
+
+footer{
+background:#0b5cab;
+color:#ffffff;
+text-align:center;
+padding:30px 20px;
+margin-top:40px;
+}
+
+footer p{
+margin:8px 0;
+}
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:15px;
+padding:20px;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero-content{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:32px;
+}
+
+.hero-text h2{
+font-size:24px;
+}
+
+.hero-image img{
+width:260px;
+}
+
+.logo img{
+width:50px;
+height:50px;
+}
+
+}
